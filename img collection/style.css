@@ -1,0 +1,97 @@
+body{
+    width: 1451px;
+    height: 1502px;
+    border: 20px solid black;
+  
+    
+}
+
+.container{
+    width: 1451px;
+    height: 1502px;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+}
+
+.container2{
+   
+    height: 519px;
+    width: 1205px;
+    display: flex;
+    justify-content: space-between;
+
+}  
+  
+    
+
+.image1{
+    background: url(images/pagedegarde.jpg) no-repeat  center / cover;
+    border: 1px solid black;
+    
+    width: 1205px;
+    height: 519px;
+    align-self: center;
+    margin-top: 104px;
+    margin-bottom: 52px;
+
+}
+
+.image2{
+    
+   
+    border: 1px solid black;
+    width: 347px;
+    height: 519px;
+
+}
+
+.img2{
+    width: 347px;
+    height: 519px;
+    object-fit: cover;
+
+}
+
+
+.image3{
+    background: url(images/coton.jpg) no-repeat  center / cover;
+    border: 1px solid black;
+    width: 838px;
+    height: 519px;
+}
+.texte{
+    border: 2px solid black;
+    width: 822px;
+    height: 134px;
+    background: rgba(196, 196, 196, 0.48);
+    margin-top: 229px;
+    margin-left: 192px;
+  
+}
+
+h1{
+    text-align: center;
+    margin-top: 30.5px;
+    
+}
+
+.texte2{
+    border: 2px solid black;
+    width: 627px;
+    height: 165px;
+    background: rgba(196, 196, 196, 0.20);
+    margin-top: 39px;
+    margin-left: 108px;
+  }
+
+  p{
+      color: white;
+      font-size: 36px;
+      margin-top: 26px;
+      margin-left: 63.5px;
+      line-height: 30px;
+  }

@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-decoration: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.fade-in {
+  animation: fade-in 300ms ease-in-out forwards;
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out forwards;
+}
+
+/* FAMILY FONT */
+footer p,
+nav a,
+footer a {
+  font-family: "Playfair Display", serif;
+}
+
+/* VISIBILITY */
+/* caractéristiques sur ordinateur  : la largeur de la fenêtre fait au maximum 640px*/
+@media screen and (min-width: 640px) {
+  .hide-for-desktop {
+    display: none;
+  }
+  .image1 {
+    width: 1205px;
+    height: 519px;
+  }
+  .texte1 {
+    margin-top: 70px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .container {
+    height: 519px;
+    width: 1205px;
+  }
+  .image3 {
+    width: 838px;
+    height: 519px;
+    padding-bottom: 32px;
+  }
+  .texte2 {
+    margin-top: 37px;
+  }
+  .pblanc {
+    font-size: 45px;
+  }
+  .logo_section {
+    width: 161px;
+    margin: 48.5px;
+  }
+  /* FOOTER */
+  footer {
+    padding-top: 40px;
+  }
+  footer p {
+    text-align: left;
+  }
+  footer img {
+    margin-right: 25px;
+  }
+}
+/* Caractéristiques sur mobile : la largeur de la fenêtre fait au minimum 641px */
+
+@media screen and (max-width: 641px) {
+  .hide-for-mobile {
+    display: none;
+  }
+  .image1 {
+    width: 350px;
+    height: 290px;
+    border: #7f825f solid 1px;
+  }
+  .texte1 {
+    font-size: 20px;
+    margin: auto;
+    width: 300px;
+  }
+  h1 {
+    padding-top: 25px;
+  }
+  .image3 {
+    width: 350px;
+    height: 290px;
+  }
+  .pblanc {
+    font-size: 24px;
+  }
+  .logo_section {
+    width: 85px;
+    margin: 20px;
+  }
+  .texte2 {
+    margin-top: 13px;
+  }
+  /* FOOTER NAV */
+  header {
+    padding: 0 10px;
+  }
+  footer p,
+  nav a,
+  footer a {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+  }
+  .divFooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  footer {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.noscroll {
+  overflow: hidden;
+}
+/* HEADER  */
+header,
+nav,
+.iconeheader {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+header {
+  max-width: 1205px;
+  margin: auto;
+}
+.menu-mobile {
+  visibility: hidden;
+  background-color: white;
+  position: absolute;
+  width: 100%;
+}
+.menu-mobile a {
+  display: block;
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  color: #7f825f;
+  text-align: center;
+  padding: 12.5px 0;
+}
+.menu-mobile .iconeheader {
+  padding: 60px 0 20px 0;
+  gap: 24px;
+  justify-content: center;
+}
+/* OVERLAY */
+.overlay {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 123px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: linear-gradient(#ca9831, transparent);
+}
+
+nav a {
+  color: #7f825f;
+}
+nav,
+footer {
+  gap: 42px;
+  font-size: 18px;
+}
+
+.iconeheader {
+  gap: 30px;
+}
+/* HAMBURGER MENU */
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #7f825f;
+}
+.hamburger span:not(last-child) {
+  margin-bottom: 3px;
+}
+/* SECTION */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 81px;
+}
+
+.image1 {
+  background: url(images/pagedegarde.png) no-repeat center / cover;
+  align-self: center;
+  margin-bottom: 52px;
+}
+
+h1 {
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
+.img2 {
+  width: 347px;
+  height: 519px;
+  object-fit: cover;
+}
+
+.image3 {
+  background: url(images/fond\ texte.png) no-repeat center / cover;
+}
+
+.texte2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pblanc {
+  text-align: center;
+  color: white;
+  font-family: "Playfair Display", serif;
+}
+/* FOOTER */
+footer {
+  height: 228px;
+  background-color: #8c973729;
+  padding-top: 40px;
+}
+.divFooter {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
